@@ -13,6 +13,8 @@
 </head>
 
 <body onclick="pageClick()">
+  <!-- for scroll element -->
+  <a name="#top"></a>
 
   <div id="controls" class="sticky">
   </div>
@@ -674,6 +676,7 @@
         <h2>Possible Future Updates</h2>
 
         <ul>
+          <li>Revisit edits - explain in better detail</li>
           <li>PDF version of this book</li>
           <li>Audio version of this book</li>
           <li>Additional works and thoughts on chapters</li>
@@ -705,7 +708,8 @@
           function createControls() {
             return `
                 <div class="light" >
-                    <button class="openbtn" onclick="openNav()">☰ Chapters</button>  
+                    <button class="openbtn" onclick="openNav()">☰ Chapters</button>
+                    <p class="right"><a href="#top"><span class="top">Back to Top</span></a></p>
 
                   </div>
 

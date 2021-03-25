@@ -3,8 +3,18 @@
     src: url('/fonts/TravelingTypewriter.ttf');
 }
 
-.hellotest {
-    font-size: 10px;
+.light {
+    color: white;
+}
+
+.top {
+    color: white !important;
+}
+
+.right {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 ul {
@@ -21,13 +31,28 @@ ul:hover {
     color: darkgray;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        padding: 10px;
+        /* background-size: 100vh center center fixed; */
+    }
+}
+
+@media only screen and (max-width: 6000px) {
+    body {
+        width: 50%;
+        padding: 0 10px;
+        background-size: 100%;
+    }
+}
+
 body {
-    width: 50%;
+    /* width: 50%; */
     margin: auto;
-    background-image: url("images/ColdPressedOffWhite.PNG")
+    background-image: url("../images/ColdPressedOffWhite.PNG");
     /* thanks to this resource from https://www.saachisingh.com/about*/
     ;
-    background-size: 100vw;
     font-family: 'TravelingTypewriter', 'American Typewriter', 'serif';
 }
 
@@ -36,6 +61,7 @@ html {
     /* font-size 1em = 10px on default browser settings */
     line-height: 120%;
     word-wrap: break-word;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, p {
@@ -58,7 +84,10 @@ div.sticky {
     position: sticky;
     top: 0;
     background-color: black;
-    border: 4px solid rgb(9, 0, 88);
+    border: 4px solid rgb(49, 49, 49);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 
 .controls {
@@ -77,6 +106,7 @@ ul.sideBar {
     padding-left: 8px;
     text-decoration: underline;
     font-size: 120%;
+    color: black;
 }
 
 .sidebar {
